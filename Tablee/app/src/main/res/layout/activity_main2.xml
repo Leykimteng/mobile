@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light">
+        <TableRow
+            android:id="@+id/profile">
+            <LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher_round" />
+            <TextView
+                android:layout_span="2"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hello World"
+                android:textSize="30dp"
+                android:textColor="@android:color/black"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/blog"
+            android:layout_weight="8">
+            <LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_span="3"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="fhjsadgfsdafsadjkfhkjhasdfhjhhjgsajhd"
+                android:textSize="30dp"
+                android:textColor="@android:color/black"/>
+        </TableRow>
+        <TableRow
+            android:background="@color/colorPrimaryDark">
+            <LinearLayout android:layout_height="80dp"
+                android:layout_width="85dp">
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/priv"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Priv"
+                android:textSize="30dp"
+                />
+
+            <LinearLayout android:layout_height="80dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textSize="30dp"
+                />
+        </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Page 1"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Page 2"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Page 3"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Page 4"
+                android:id="@+id/b4"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Page 5"
+                android:id="@+id/b5"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Page 6"
+                android:id="@+id/b6"
+                />
+
+
+        </LinearLayout>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>
