@@ -12,13 +12,15 @@
         android:collapseColumns="">
 
         <TableRow
+            android:layout_weight="1"
+
             android:background="@drawable/ic_launcher_background">
 
             <TextView
                 android:layout_weight="1"
                 android:id="@+id/tvFirstCol"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="match_parent"
                 android:background="@android:color/background_dark"
                 />
 
@@ -26,17 +28,18 @@
                 android:layout_weight="1"
                 android:id="@+id/tvFirstCo2"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="match_parent"
                 android:background="@color/colorPrimaryDark" />
             <TextView
                 android:layout_weight="1"
                 android:id="@+id/tvFirstCo3"
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_height="match_parent"
                 android:background="@color/colorAccent" />
 
         </TableRow>
-        <TableRow android:background="@drawable/ic_launcher_background" >
+        <TableRow                 android:layout_weight="1"
+            android:background="@drawable/ic_launcher_background" >
 
             <TextView
                 android:layout_weight="2"
@@ -54,7 +57,9 @@
                 android:background="@android:color/holo_blue_bright"
                 />
         </TableRow>
-        <TableRow android:weightSum="3">
+        <TableRow                 android:layout_weight="1"
+            android:weightSum="3"
+            android:background="@drawable/ic_launcher_background" >
             <TextView
                 android:layout_weight="1"
                 android:layout_span="1"
@@ -91,10 +96,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.874" />
+        android:gravity="center"
+        />
 
 </android.support.constraint.ConstraintLayout>

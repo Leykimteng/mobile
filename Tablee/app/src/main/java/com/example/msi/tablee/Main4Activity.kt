@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main4.*
 
 class Main4Activity : AppCompatActivity() {
 
@@ -16,8 +17,7 @@ class Main4Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
 
-        var listview = findViewById<ListView>(R.id.listview)
-
+        //var listview = findViewById<ListView>(R.id.listview)
 //        var arrlist = ArrayList<String>()
 //
 //        arrlist.add("Testing")
@@ -32,6 +32,7 @@ class Main4Activity : AppCompatActivity() {
 //        arrlist.add("Testing                   777")
 
         //var adapter = ArrayAdapter(this,android.R.layout.simple_list_item_single_choice,arrlist)
+        var adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,arrlist)
         var adapter = MycustomAdapter(this)
         listview.adapter = adapter
 
@@ -41,7 +42,7 @@ class Main4Activity : AppCompatActivity() {
 class MycustomAdapter(context:Context): BaseAdapter()
 {
     var names = arrayListOf<String>(
-        "testing","Hwllo world","My Cat"
+        "testing","Hello world","My Cat"
     )
     var myContext:Context
     init {
